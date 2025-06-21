@@ -1,0 +1,4 @@
+site_name: AARC
+site_url: https://aarcthom.github.io/aarcio
+theme:
+  name: material
