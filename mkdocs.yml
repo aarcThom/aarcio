@@ -8,7 +8,8 @@ nav:
             - 'Unstructured Notes': 'notes/frameworks_sdks/revit_api/revit.md'
           - 'RhinoCommon':
             - 'Unstructured Notes': 'notes/frameworks_sdks/rhinocommon/rhino.md'
-        - 'Tooling': 'notes/tooling/placeholder.md'
+        - 'Tooling':
+          - 
     - 'Projects and CV':
         - 'Projects': 'projects_cv/projects.md'
         - 'CV': 'projects_cv/cv.md'
