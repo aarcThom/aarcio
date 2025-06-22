@@ -1,23 +1,21 @@
 site_name: AARC
 
-
 nav:
     - Home: 'index.md'
     - 'Notes':
-      - 'Frameworks, Libraries, and SDKS':
-        - 'Revit API':
-          - 'Unstructured Notes': 'docs/notes/RevitAPI/revit.md'
-        - 'RhinoCommon':
-          - 'Unstructured Notes': 'docs/notes/RhinoCommon/rhino.md'
-      - 'Tooling':
+        - 'Frameworks, Libraries, and SDKS':
+          - 'Revit API':
+            - 'Unstructured Notes': 'notes/frameworks_sdks/revit_api/revit.md'
+          - 'RhinoCommon':
+            - 'Unstructured Notes': 'notes/frameworks_sdks/rhinocommon/rhino.md'
+        - 'Tooling': 'notes/tooling/placeholder.md'
     - 'Projects and CV':
-      - 'Projects': 'docs/ProjectsCV/projects.md'
-      - 'CV': 'docs/ProjectsCV/CV.md'
+        - 'Projects': 'projects_cv/projects.md'
+        - 'CV': 'projects_cv/cv.md'
     - About:
-        - 'License': 'license.md'
-        - 'Release Notes': 'release-notes.md'
-
-
+        - 'About': 'about/about.md'
+        - 'License': 'about/license.md'
+        - 'Release Notes': 'about/changelog.md'
 
 
 theme:
