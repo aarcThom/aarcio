@@ -9,7 +9,7 @@ nav:
           - 'RhinoCommon':
             - 'Unstructured Notes': 'notes/frameworks_sdks/rhinocommon/rhino.md'
         - 'Tooling':
-          - 
+          - 'Git': 'notes/tooling/git/git.md'
     - 'Projects and CV':
         - 'Projects': 'projects_cv/projects.md'
         - 'CV': 'projects_cv/cv.md'
