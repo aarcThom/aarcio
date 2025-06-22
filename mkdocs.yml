@@ -1,4 +1,24 @@
 site_name: AARC
-site_url: https://aarcthom.github.io/aarcio
+
+
+nav:
+    - Home: 'index.md'
+    - 'Notes':
+      - 'Frameworks, Libraries, and SDKS':
+        - 'Revit API':
+          - 'Unstructured Notes': 'docs/notes/RevitAPI/revit.md'
+        - 'RhinoCommon':
+          - 'Unstructured Notes': 'docs/notes/RhinoCommon/rhino.md'
+      - 'Tooling':
+    - 'Projects and CV':
+      - 'Projects': 'docs/ProjectsCV/projects.md'
+      - 'CV': 'docs/ProjectsCV/CV.md'
+    - About:
+        - 'License': 'license.md'
+        - 'Release Notes': 'release-notes.md'
+
+
+
+
 theme:
   name: material
