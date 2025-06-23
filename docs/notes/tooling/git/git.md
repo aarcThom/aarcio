@@ -2,7 +2,7 @@
 
 ## Git Configuration
 
-### MKDOcs / Static Websites
+### Gotchas
 
 #### Tracking Folder Case Changes
 

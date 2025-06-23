@@ -5,7 +5,8 @@ nav:
     - 'Notes':
         - 'Frameworks, Libraries, and SDKS':
           - 'Revit API':
-            - 'Unstructured Notes': 'notes/frameworks_sdks/revit_api/revit.md'
+            - 'Revit API Concepts': 'notes/frameworks_sdks/revit_api/concepts.md'
+            - 'Common Operations': 'notes/frameworks_sdks/revit_api/revit.md'
           - 'RhinoCommon':
             - 'Unstructured Notes': 'notes/frameworks_sdks/rhinocommon/rhino.md'
         - 'Tooling':
@@ -21,3 +22,31 @@ nav:
 
 theme:
   name: material
+
+  palette:
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
