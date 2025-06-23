@@ -38,15 +38,15 @@ double wallLength = wallElement.get_Parameter(BuiltInParameter.CURVE_ELEM_LENGTH
 
 The `ISelectionFilter` interface allows you to control what elements a user can pick during a selection operation. The interface has two methods you must implement.
 
-#### `AllowElement(Element elem)`
+**`AllowElement(Element elem)`**
 
 * **Purpose**
-  * Called for each element that is candidate for selection.
+    * Called for each element that is candidate for selection.
 * **Params**
-  * `Element elem` - the element being checked. 
+    * `Element elem` - the element being checked. 
 * **Returns**
-  * `true` - the element is selectable.
-  * `false` - the element is not selectable.
+    * `true` - the element is selectable.
+    * `false` - the element is not selectable.
 
 For example, if you only want the user to be able to select walls:
 
@@ -63,16 +63,16 @@ public bool AllowElement(Element elem)
 
 All categories within the `BuiltInCategory` enumeration can be [found here.](https://www.revitapidocs.com/2019/ba1c5b30-242f-5fdc-8ea9-ec3b61e6e722.htm)
 
-#### `AllowReference(Reference reference, XYZ position)`
+**`AllowReference(Reference reference, XYZ position)`**
 
 * **Purpose**
-  * This method is used to filter sub-elements, which are parts of an element that can be selected individually, such as faces, edges, or curves.
+    * This method is used to filter sub-elements, which are parts of an element that can be selected individually, such as faces, edges, or curves.
 * **Params**
-  * `Reference reference` - if `AllowElement` returns `true`, Revit then identifies the specific sub-element that the user is pointing at.
-  * `XYZ position` - Likewise, this returns where the user clicked to make the selection allowing a sub-element selection.
+    * `Reference reference` - if `AllowElement` returns `true`, Revit then identifies the specific sub-element that the user is pointing at.
+    * `XYZ position` - Likewise, this returns where the user clicked to make the selection allowing a sub-element selection.
 * **Returns**
-  * `true` - The referenced sub-element is selectable.
-  * `false` - The referenced sub-element is not selectable.
+    * `true` - The referenced sub-element is selectable.
+    * `false` - The referenced sub-element is not selectable.
 
 ---
 
