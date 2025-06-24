@@ -112,3 +112,29 @@ Face selectedFace = elem.GetGeometryObjectFromReference(pickedRef) as Face;
 ```
 
 ---
+
+## T
+
+### Transactions
+
+
+*Transactions are objects that capture the changes to the Revit model. Changes to the Revit model can only be performed when there is an active transaction to do so. Transactions can either be committed – which means that their changes are written/recorded into the model – or rolled-back – which means their changes are undone.* [^1]
+
+
+At the beginning of your code, you need to use a **Transaction Attribute.** This set to *manual* if you want to interactive with the model and *readonly* if you only want to read from the model. For example:
+
+```csharp
+[Transaction(TransactionMode.Manual)]
+```
+
+By setting the TransactionMode to Manual, the developer is explicitly stating that they will be responsible for managing transactions within the code. This means the script must:
+
+* ***Instantiate a Transaction object:*** ```Transaction trans = new Transaction(doc);```
+* ***Start the transaction:*** Using the ```trans.Start("Descriptive Name");``` method before making any changes to the model. The string argument provides a name for the transaction that will appear in Revit's undo history.
+* ***Commit or roll back the transaction:*** After the modifications are complete, ```trans.Commit();``` saves the changes to the model. If an error occurs or the changes need to be discarded, ```trans.RollBack();``` would be used instead.
+
+---
+
+### Footnotes
+
+[^1]: [Autodesk Revit Guides](https://www.autodesk.com/support/technical/article/caas/tsarticles/ts/zPJm3n5B62MM5YIkHLHgk.html)
