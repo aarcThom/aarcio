@@ -23,7 +23,7 @@ nav:
 theme:
   name: material
   font:
-    text: roboto
+    text: roboto mono
 
   palette:
 
