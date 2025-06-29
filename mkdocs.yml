@@ -22,6 +22,8 @@ nav:
 
 theme:
   name: material
+  font:
+    text: roboto
 
   palette:
 
