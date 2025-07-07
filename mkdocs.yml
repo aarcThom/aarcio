@@ -2,7 +2,10 @@ site_name: AARC
 
 nav:
     - Home: 'index.md'
+    - 'Demo': 'demo/demo.md'
     - 'Notes':
+        - 'Programming':
+          - 'Basic Concepts': 'notes/programming/basic_concepts.md'
         - 'Frameworks, Libraries, and SDKS':
           - 'Revit API':
             - 'Revit API Concepts': 'notes/frameworks_sdks/revit_api/concepts.md'
@@ -22,8 +25,8 @@ nav:
 
 theme:
   name: material
-  font:
-    text: roboto mono
+  font: 
+    text: Roboto
 
   palette:
 
