@@ -26,7 +26,8 @@ nav:
 theme:
   name: material
   font: 
-    text: Roboto
+    text: Atkinson Hyperlegible Next
+    code: Roboto Mono
 
   palette:
 
